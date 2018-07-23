@@ -74,13 +74,13 @@
   </url>
   
   <url>
-    <loc>https://azizkandemir.github.io/en/categories/blog/</loc>
+    <loc>https://azizkandemir.github.io/en/tags/blog/</loc>
     <lastmod>2018-06-27T00:00:00+03:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://azizkandemir.github.io/en/tags/blog/</loc>
+    <loc>https://azizkandemir.github.io/en/categories/blog/</loc>
     <lastmod>2018-06-27T00:00:00+03:00</lastmod>
     <priority>0</priority>
   </url>
@@ -134,12 +134,6 @@
   </url>
   
   <url>
-    <loc>https://azizkandemir.github.io/en/categories/development/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://azizkandemir.github.io/en/tags/development/</loc>
     <lastmod>2018-06-27T00:00:00+03:00</lastmod>
     <priority>0</priority>
@@ -153,6 +147,12 @@
                 hreflang="en"
                 href="https://azizkandemir.github.io/en/tags/development/"
                 />
+  </url>
+  
+  <url>
+    <loc>https://azizkandemir.github.io/en/categories/development/</loc>
+    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -172,22 +172,6 @@
   </url>
   
   <url>
-    <loc>https://azizkandemir.github.io/en/categories/golang/</loc>
-    <lastmod>2018-06-27T00:00:00+03:00</lastmod>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="tr"
-                href="https://azizkandemir.github.io/categories/golang/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://azizkandemir.github.io/en/categories/golang/"
-                />
-  </url>
-  
-  <url>
     <loc>https://azizkandemir.github.io/en/tags/golang/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -200,6 +184,22 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://azizkandemir.github.io/en/tags/golang/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://azizkandemir.github.io/en/categories/golang/</loc>
+    <lastmod>2018-06-27T00:00:00+03:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="tr"
+                href="https://azizkandemir.github.io/categories/golang/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://azizkandemir.github.io/en/categories/golang/"
                 />
   </url>
   
@@ -232,13 +232,13 @@
   </url>
   
   <url>
-    <loc>https://azizkandemir.github.io/en/categories/projects/</loc>
+    <loc>https://azizkandemir.github.io/en/tags/projects/</loc>
     <lastmod>2016-10-02T22:55:05-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://azizkandemir.github.io/en/tags/projects/</loc>
+    <loc>https://azizkandemir.github.io/en/categories/projects/</loc>
     <lastmod>2016-10-02T22:55:05-04:00</lastmod>
     <priority>0</priority>
   </url>
