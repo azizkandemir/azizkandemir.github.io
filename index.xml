@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Aziz Kandemir</title>
+    <link>https://azizkandemir.github.io/</link>
+    <description>Recent content on Aziz Kandemir</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>tr-TR</language>
+    <lastBuildDate>Wed, 27 Jun 2018 00:00:00 +0300</lastBuildDate>
+    
+	<atom:link href="https://azizkandemir.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Ben Kimim?</title>
+      <link>https://azizkandemir.github.io/aboutme/</link>
+      <pubDate>Wed, 27 Jun 2018 00:00:00 +0300</pubDate>
+      
+      <guid>https://azizkandemir.github.io/aboutme/</guid>
+      <description>deneme deneme yazı deneme deneme deneme yazı deneme deneme deneme yazı denemedeneme deneme yazı deneme deneme deneme yazı deneme deneme deneme yazı deneme deneme deneme yazı deneme deneme deneme yazı deneme deneme deneme yazı deneme deneme deneme yazı deneme deneme deneme yazı denemedeneme deneme yazı denemedeneme deneme yazı denemedeneme deneme yazı denemedeneme deneme yazı denemedeneme deneme yazı denemedeneme deneme yazı deneme deneme deneme yazı deneme deneme deneme yazı deneme deneme deneme yazı deneme deneme deneme yazı deneme deneme deneme yazı deneme deneme deneme yazı deneme deneme deneme yazı deneme deneme deneme yazı denemes deneme deneme yazı deneme deneme deneme yazı deneme deneme deneme yazı deneme.</description>
+    </item>
+    
+    <item>
+      <title>ilk blog</title>
+      <link>https://azizkandemir.github.io/blog/ilk-blog/</link>
+      <pubDate>Wed, 27 Jun 2018 00:00:00 +0300</pubDate>
+      
+      <guid>https://azizkandemir.github.io/blog/ilk-blog/</guid>
+      <description>Introduction deneme deneme yazı deneme deneme deneme yazı deneme deneme deneme yazı denemedeneme deneme yazı deneme deneme deneme yazı deneme deneme deneme yazı deneme deneme deneme yazı deneme deneme deneme yazı deneme deneme deneme yazı deneme deneme deneme yazı deneme deneme deneme yazı denemedeneme deneme yazı denemedeneme deneme yazı denemedeneme deneme yazı denemedeneme deneme yazı denemedeneme deneme yazı denemedeneme deneme yazı deneme deneme deneme yazı deneme deneme deneme yazı deneme deneme deneme yazı deneme deneme deneme yazı deneme deneme deneme yazı deneme deneme deneme yazı deneme deneme deneme yazı deneme deneme deneme yazı denemes deneme deneme yazı deneme deneme deneme yazı deneme deneme deneme yazı deneme.</description>
+    </item>
+    
+    <item>
+      <title>Projeler</title>
+      <link>https://azizkandemir.github.io/projects/</link>
+      <pubDate>Sun, 02 Oct 2016 22:55:05 -0400</pubDate>
+      
+      <guid>https://azizkandemir.github.io/projects/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Yeni bir tema yaratmak</title>
+      <link>https://azizkandemir.github.io/blog/yeni-bir-tema-yaratmak/</link>
+      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://azizkandemir.github.io/blog/yeni-bir-tema-yaratmak/</guid>
+      <description>Giris This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.
+We&amp;rsquo;ll start with creating a new site with a very basic template.</description>
+    </item>
+    
+  </channel>
+</rss>

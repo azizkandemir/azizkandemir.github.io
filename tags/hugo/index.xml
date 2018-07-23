@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo on Aziz Kandemir</title>
+    <link>https://azizkandemir.github.io/tags/hugo/</link>
+    <description>Recent content in Hugo on Aziz Kandemir</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>tr-TR</language>
+    <lastBuildDate>Wed, 27 Jun 2018 00:00:00 +0300</lastBuildDate>
+    
+	<atom:link href="https://azizkandemir.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ilk blog</title>
+      <link>https://azizkandemir.github.io/blog/ilk-blog/</link>
+      <pubDate>Wed, 27 Jun 2018 00:00:00 +0300</pubDate>
+      
+      <guid>https://azizkandemir.github.io/blog/ilk-blog/</guid>
+      <description>Introduction deneme deneme yazı deneme deneme deneme yazı deneme deneme deneme yazı denemedeneme deneme yazı deneme deneme deneme yazı deneme deneme deneme yazı deneme deneme deneme yazı deneme deneme deneme yazı deneme deneme deneme yazı deneme deneme deneme yazı deneme deneme deneme yazı denemedeneme deneme yazı denemedeneme deneme yazı denemedeneme deneme yazı denemedeneme deneme yazı denemedeneme deneme yazı denemedeneme deneme yazı deneme deneme deneme yazı deneme deneme deneme yazı deneme deneme deneme yazı deneme deneme deneme yazı deneme deneme deneme yazı deneme deneme deneme yazı deneme deneme deneme yazı deneme deneme deneme yazı denemes deneme deneme yazı deneme deneme deneme yazı deneme deneme deneme yazı deneme.</description>
+    </item>
+    
+  </channel>
+</rss>
