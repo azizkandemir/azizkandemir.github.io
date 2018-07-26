@@ -13,23 +13,13 @@
     
     <item>
       <title>LXC konteynerinde PostgreSQL</title>
-      <link>https://azizkandemir.github.io/blog/ilk-blog/</link>
+      <link>https://azizkandemir.github.io/blog/lxc-postgresql/</link>
       <pubDate>Thu, 26 Jul 2018 00:00:00 +0300</pubDate>
       
-      <guid>https://azizkandemir.github.io/blog/ilk-blog/</guid>
+      <guid>https://azizkandemir.github.io/blog/lxc-postgresql/</guid>
       <description>LXC Nedir? LXC, işletim sistemi emülatörü olan sanal makinelerden farklı olarak tamamen soyut bir makine yerine soyut bir işletim sistemi seviyesinde sanallaştırma sağlayan konteyner çeşitlerinden biridir.
 Bu yazımda bir LXC konteyneri nasıl kurulur, ağ yapılandırması nasıl yapılır ve kurulacak olan bu konteynerde postgresql nasıl kurulur, bunlardan bahsedeceğim.
 LXC Kurulumu Sahip olduğum işletim sistemi: Distributor ID: Ubuntu Description: Ubuntu 18.04 LTS Release: 18.04 Codename: bionic  Öncelikle yapacağımız hemen hemen her işlem root izni isteyeceği için kendimizi root seviyesine çıkaralım:</description>
-    </item>
-    
-    <item>
-      <title>Yeni bir tema yaratmak</title>
-      <link>https://azizkandemir.github.io/blog/yeni-bir-tema-yaratmak/</link>
-      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://azizkandemir.github.io/blog/yeni-bir-tema-yaratmak/</guid>
-      <description>Giris This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.
-We&amp;rsquo;ll start with creating a new site with a very basic template.</description>
     </item>
     
   </channel>

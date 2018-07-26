@@ -12,22 +12,14 @@
     
     
     <item>
-      <title>Creating a new theme</title>
-      <link>https://azizkandemir.github.io/en/blog/creating-a-new-theme/</link>
+      <title>PostgreSQL in a LXC Container</title>
+      <link>https://azizkandemir.github.io/en/blog/lxc-postgresql/</link>
       <pubDate>Wed, 27 Jun 2018 00:00:00 +0300</pubDate>
       
-      <guid>https://azizkandemir.github.io/en/blog/creating-a-new-theme/</guid>
-      <description>Giris This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.
-We&amp;rsquo;ll start with creating a new site with a very basic template.</description>
-    </item>
-    
-    <item>
-      <title>First blog</title>
-      <link>https://azizkandemir.github.io/en/blog/first-blog/</link>
-      <pubDate>Wed, 27 Jun 2018 00:00:00 +0300</pubDate>
-      
-      <guid>https://azizkandemir.github.io/en/blog/first-blog/</guid>
-      <description>Introduction deneme deneme yazı deneme deneme deneme yazı deneme deneme deneme yazı denemedeneme deneme yazı deneme deneme deneme yazı deneme deneme deneme yazı deneme deneme deneme yazı deneme deneme deneme yazı deneme deneme deneme yazı deneme deneme deneme yazı deneme deneme deneme yazı denemedeneme deneme yazı denemedeneme deneme yazı denemedeneme deneme yazı denemedeneme deneme yazı denemedeneme deneme yazı denemedeneme deneme yazı deneme deneme deneme yazı deneme deneme deneme yazı deneme deneme deneme yazı deneme deneme deneme yazı deneme deneme deneme yazı deneme deneme deneme yazı deneme deneme deneme yazı deneme deneme deneme yazı denemes deneme deneme yazı deneme deneme deneme yazı deneme deneme deneme yazı deneme.</description>
+      <guid>https://azizkandemir.github.io/en/blog/lxc-postgresql/</guid>
+      <description>What is LXC? LXC is one of the container types that unlike the virtual machines which are operating system emulators, provides an abstract operating system while a virtual machine provides an abstract machine.
+I&amp;rsquo;m going to talk about how to install a LXC container, how to configure networking and how to install postgresql into the container that will be created.
+LXC Setup The OS that I have: Distributor ID: Ubuntu Description: Ubuntu 18.</description>
     </item>
     
     <item>
@@ -48,41 +40,6 @@ I&amp;rsquo;m at the beginning of a very long way. I&amp;rsquo;m going to publis
       
       <guid>https://azizkandemir.github.io/en/projects/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>(Hu)go Template Primer</title>
-      <link>https://azizkandemir.github.io/en/blog/goisforlovers/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://azizkandemir.github.io/en/blog/goisforlovers/</guid>
-      <description>Hugo uses the excellent go html/template library for its template engine. It is an extremely lightweight engine that provides a very small amount of logic. In our experience that it is just the right amount of logic to be able to create a good static website. If you have used other template systems from different languages or frameworks you will find a lot of similarities in go templates.
-This document is a brief primer on using go templates.</description>
-    </item>
-    
-    <item>
-      <title>Getting Started with Hugo</title>
-      <link>https://azizkandemir.github.io/en/blog/hugoisforlovers/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://azizkandemir.github.io/en/blog/hugoisforlovers/</guid>
-      <description>Step 1. Install Hugo Goto hugo releases and download the appropriate version for your os and architecture.
-Save it somewhere specific as we will be using it in the next step.
-More complete instructions are available at installing hugo
-Step 2. Build the Docs Hugo has its own example site which happens to also be the documentation site you are reading right now.
-Follow the following steps:
- Clone the hugo repository Go into the repo Run hugo in server mode and build the docs Open your browser to http://localhost:1313  Corresponding pseudo commands:</description>
-    </item>
-    
-    <item>
-      <title>Migrate from jekyll</title>
-      <link>https://azizkandemir.github.io/en/blog/migrate-from-jekyll/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://azizkandemir.github.io/en/blog/migrate-from-jekyll/</guid>
-      <description>Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like
-▾ &amp;lt;root&amp;gt;/ ▾ images/ logo.png  should become
-▾ &amp;lt;root&amp;gt;/ ▾ static/ ▾ images/ logo.png  Additionally, you&amp;rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static.</description>
     </item>
     
   </channel>

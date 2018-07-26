@@ -3,13 +3,18 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://azizkandemir.github.io/en/blog/creating-a-new-theme/</loc>
+    <loc>https://azizkandemir.github.io/en/blog/lxc-postgresql/</loc>
     <lastmod>2018-06-27T00:00:00+03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://azizkandemir.github.io/en/blog/first-blog/</loc>
-    <lastmod>2018-06-27T00:00:00+03:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="tr"
+                href="https://azizkandemir.github.io/blog/lxc-postgresql/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://azizkandemir.github.io/en/blog/lxc-postgresql/"
+                />
   </url>
   
   <url>
@@ -43,21 +48,6 @@
   </url>
   
   <url>
-    <loc>https://azizkandemir.github.io/en/blog/goisforlovers/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://azizkandemir.github.io/en/blog/hugoisforlovers/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://azizkandemir.github.io/en/blog/migrate-from-jekyll/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://azizkandemir.github.io/en/</loc>
     <lastmod>2018-06-27T00:00:00+03:00</lastmod>
     <priority>0</priority>
@@ -71,18 +61,6 @@
                 hreflang="en"
                 href="https://azizkandemir.github.io/en/"
                 />
-  </url>
-  
-  <url>
-    <loc>https://azizkandemir.github.io/en/tags/blog/</loc>
-    <lastmod>2018-06-27T00:00:00+03:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://azizkandemir.github.io/en/categories/blog/</loc>
-    <lastmod>2018-06-27T00:00:00+03:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -103,7 +81,6 @@
   
   <url>
     <loc>https://azizkandemir.github.io/en/categories/</loc>
-    <lastmod>2018-06-27T00:00:00+03:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -114,6 +91,22 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://azizkandemir.github.io/en/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://azizkandemir.github.io/en/tags/container/</loc>
+    <lastmod>2018-06-27T00:00:00+03:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="tr"
+                href="https://azizkandemir.github.io/tags/container/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://azizkandemir.github.io/en/tags/container/"
                 />
   </url>
   
@@ -134,51 +127,35 @@
   </url>
   
   <url>
-    <loc>https://azizkandemir.github.io/en/tags/development/</loc>
+    <loc>https://azizkandemir.github.io/en/tags/lxc/</loc>
     <lastmod>2018-06-27T00:00:00+03:00</lastmod>
     <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="tr"
+                href="https://azizkandemir.github.io/tags/lxc/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://azizkandemir.github.io/en/tags/lxc/"
+                />
   </url>
   
   <url>
-    <loc>https://azizkandemir.github.io/en/categories/development/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://azizkandemir.github.io/en/tags/go/</loc>
+    <loc>https://azizkandemir.github.io/en/tags/postgresql/</loc>
     <lastmod>2018-06-27T00:00:00+03:00</lastmod>
     <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://azizkandemir.github.io/en/tags/golang/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://azizkandemir.github.io/en/categories/golang/</loc>
-    <lastmod>2018-06-27T00:00:00+03:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://azizkandemir.github.io/en/tags/hugo/</loc>
-    <lastmod>2018-06-27T00:00:00+03:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://azizkandemir.github.io/en/tags/jekyll/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://azizkandemir.github.io/en/tags/migrate/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="tr"
+                href="https://azizkandemir.github.io/tags/postgresql/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://azizkandemir.github.io/en/tags/postgresql/"
+                />
   </url>
   
   <url>
@@ -207,18 +184,6 @@
                 hreflang="en"
                 href="https://azizkandemir.github.io/en/tags/"
                 />
-  </url>
-  
-  <url>
-    <loc>https://azizkandemir.github.io/en/tags/templates/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://azizkandemir.github.io/en/tags/themes/</loc>
-    <lastmod>2018-06-27T00:00:00+03:00</lastmod>
-    <priority>0</priority>
   </url>
   
 </urlset>

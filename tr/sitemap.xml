@@ -3,8 +3,18 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://azizkandemir.github.io/blog/ilk-blog/</loc>
+    <loc>https://azizkandemir.github.io/blog/lxc-postgresql/</loc>
     <lastmod>2018-07-26T00:00:00+03:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://azizkandemir.github.io/en/blog/lxc-postgresql/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="tr"
+                href="https://azizkandemir.github.io/blog/lxc-postgresql/"
+                />
   </url>
   
   <url>
@@ -35,11 +45,6 @@
                 hreflang="tr"
                 href="https://azizkandemir.github.io/projects/"
                 />
-  </url>
-  
-  <url>
-    <loc>https://azizkandemir.github.io/blog/yeni-bir-tema-yaratmak/</loc>
-    <lastmod>2014-09-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -93,6 +98,16 @@
     <loc>https://azizkandemir.github.io/tags/container/</loc>
     <lastmod>2018-07-26T00:00:00+03:00</lastmod>
     <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://azizkandemir.github.io/en/tags/container/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="tr"
+                href="https://azizkandemir.github.io/tags/container/"
+                />
   </url>
   
   <url>
@@ -115,12 +130,32 @@
     <loc>https://azizkandemir.github.io/tags/lxc/</loc>
     <lastmod>2018-07-26T00:00:00+03:00</lastmod>
     <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://azizkandemir.github.io/en/tags/lxc/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="tr"
+                href="https://azizkandemir.github.io/tags/lxc/"
+                />
   </url>
   
   <url>
     <loc>https://azizkandemir.github.io/tags/postgresql/</loc>
     <lastmod>2018-07-26T00:00:00+03:00</lastmod>
     <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://azizkandemir.github.io/en/tags/postgresql/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="tr"
+                href="https://azizkandemir.github.io/tags/postgresql/"
+                />
   </url>
   
   <url>

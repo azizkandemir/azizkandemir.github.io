@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="map[]" />
+    <meta name="description" content="Kişisel Blog Sayfası">
+    <link rel="shortcut icon" type="image/x-icon" href="https://azizkandemir.github.io/img/favicon.ico">
+    <title>PostgreSQL in a LXC Container</title>
+    <meta name="generator" content="Hugo 0.40.1" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://azizkandemir.github.io/css/main.css" /><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/styles/tomorrow.min.css">
+    
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,200bold,400old" />
+    
+    <!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+    
+  </head>
+
+  <body>
+    <div id="wrap">
+
+      
+      <nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="https://azizkandemir.github.io/"><i class="fa fa-home"></i></a>
+    </div>
+
+    <div id="navbar">
+      <ul class="nav navbar-nav navbar-right">
+      
+        
+        <li><a href="/en/blog/">BLOG</a></li>
+        
+        <li><a href="/en/aboutme/">ABOUT ME</a></li>
+        
+        <li><a href="/en/projects/">PROJECTS</a></li>
+        
+      
+      </ul>
+    </div>
+  </div>
+</nav>
+
+      
+      <div class="container">
+        <div class="blog-post">
+          <h3>
+            <strong><a href="https://azizkandemir.github.io/en/blog/lxc-postgresql/">PostgreSQL in a LXC Container</a></strong>
+          </h3>
+        </div>
+        <div class="blog-title">
+          <h4>
+          June 27, 2018
+            &nbsp;&nbsp;
+          </h4>
+	  <h4>
+	  
+	  <span class="label label-success">LXC</span>
+          
+	  <span class="label label-success">postgresql</span>
+          
+	  <span class="label label-success">container</span>
+          
+          </h4>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <div class="blogpost">
+              
+
+<h2 id="what-is-lxc"><strong>What is LXC?</strong></h2>
+
+<p><a href="https://github.com/lxc/lxc">LXC</a> is one of the <strong>container</strong> types that unlike the <strong>virtual machines</strong> which are operating system emulators, provides an abstract operating system while a virtual machine provides an abstract machine.</p>
+
+<p>I&rsquo;m going to talk about how to install a LXC container, how to configure networking and how to install postgresql into the container that will be created.</p>
+
+<h2 id="lxc-setup"><strong>LXC Setup</strong></h2>
+
+<pre><code>The OS that I have:
+
+Distributor ID: Ubuntu
+Description:    Ubuntu 18.04 LTS
+Release:    18.04
+Codename:   bionic
+</code></pre>
+
+<p>First of all let&rsquo;s take ourself to the <strong>root</strong> level because almost every operation will need <strong>root</strong> authorization:</p>
+
+<pre><code>$ sudo su
+</code></pre>
+
+<p>Let&rsquo;s run this command:</p>
+
+<pre><code>$ apt install lxc1
+</code></pre>
+
+<p>to install <strong>LXC</strong> into our system. We are ready to create our container. I am going to create a container named <strong>postgres-cont</strong> but you can name your container as you want with the <strong>-n</strong> parameter. Run this command:</p>
+
+<pre><code>$ lxc-create -n postgres-cont -t download
+</code></pre>
+
+<p>in the terminal that we are root. This command will take us to a screen that we can choose the operating system with details that we will install to our container:
+<p align="center">
+<img src="/img/gif1.gif" alt="gif" />
+</p></p>
+
+<p>The duration of the container creation may change depending on the quality of your internet, be patient :)</p>
+
+<p>Next command shows the existing containers:</p>
+
+<p>$ lxc-ls &ndash;fancy</p>
+
+<p>Output:</p>
+
+<pre><code>    NAME          STATE   AUTOSTART GROUPS IPV4 IPV6    
+    postgres-cont STOPPED 0         -      -    -    
+</code></pre>
+
+<p>But our container is not running. It is time to run the container that we&rsquo;ve just created. Run this:</p>
+
+<pre><code>$ lxc-start -n postgres-cont
+</code></pre>
+
+<p>When we list our containers again:</p>
+
+<pre><code>$ lxc-ls --fancy
+</code></pre>
+
+<p>Current output is:</p>
+
+<pre><code>    NAME          STATE   AUTOSTART GROUPS IPV4      IPV6 
+    postgres-cont RUNNING 0         -      10.0.3.98 -  
+</code></pre>
+
+<p>We can see that our container is running. We can access to our container. For this run this command:</p>
+
+<pre><code>$ lxc-attach -n postgres-cont
+</code></pre>
+
+<p>The first thing to install into our container is <strong><code>net-tools</code></strong>:</p>
+
+<pre><code>$ apt-get install net-tools
+</code></pre>
+
+<p><strong>Vi</strong> editor should already installed in our container by default but I am going to install <strong>Nano</strong> just because of my personal preferences:</p>
+
+<pre><code>$ apt-get install nano
+</code></pre>
+
+<p>And of course postgreSQL:</p>
+
+<pre><code>$ apt-get install postgresql
+</code></pre>
+
+<p>Now postgresql is ready to be used. By this command:</p>
+
+<pre><code>$ sudo -u postgres psql
+</code></pre>
+
+<p>we can access to postgresql:
+<p align="center">
+<img src="/img/gif2.gif" alt="gif" />
+</p></p>
+
+<p>Actually we run <code>psql</code> command with <strong>postgres</strong> user in the command that we&rsquo;ve just run. The reason for that is, PostgreSQL cannot be accessible by any system user except <strong>postgres</strong>. So if we would run <code>psql</code> command with the <strong>root</strong> user of our container we would get an error:
+<p align="center">
+<img src="/img/gif3.gif" alt="gif" />
+</p></p>
+
+<hr />
+
+<h3 id="file-transfer-from-lxc-container-to-host">File Transfer From LXC Container to Host</h3>
+
+<p>We can access to root file system of our containers that we created before in <strong>/var/lib/lxc</strong> folder by default with <code>lxc-create</code> command. In this way we can transfer files between our host machine and container.</p>
+
+<p>Here is a short example of transferring a .txt file named <code>test.txt</code> from our container toour host machine by accesing via our host machine:
+<p align="center">
+<img src="/img/gif5.gif" alt="gif" />
+</p></p>
+
+<hr />
+
+<h2 id="lxc-network-configuration"><strong>LXC Network Configuration</strong></h2>
+
+<p>###dnsmasq.conf</p>
+
+<p>an IPv4 address is defined randomly between the range of the <strong>LXC_DHCP_RANGE</strong> variable, which is defined in <strong><code>lxc-net</code></strong> that is in the <code>/etc/default</code> folder, to our containers:</p>
+
+<pre><code>    LXC_DHCP_RANGE=&quot;10.0.3.2,10.0.3.254&quot;
+</code></pre>
+
+<p>If we want to remove this randomness and define IPv4 address of our container by our own, we need to make a few configurations.</p>
+
+<p>Firstly let&rsquo;s configure <strong><code>lxc-net</code></strong> file:</p>
+
+<pre><code>    #LXC_DHCP_CONFILE=/etc/lxc/dnsmasq.conf
+</code></pre>
+
+<p>Uncomment this line that commented by default and create a file named <strong>dnsmasq.conf</strong> in <code>/etc/lxc</code> folder:</p>
+
+<pre><code>$ touch /etc/lxc/dnsmasq.conf
+</code></pre>
+
+<p>Add this line to the folder that we&rsquo;ve just created, save it and quit:</p>
+
+<pre><code>    dhcp-host=postgres-cont,10.0.3.190
+</code></pre>
+
+<p>You can put any IP address that in the range of <strong>LXC_DHCP_RANGE</strong> variable which is in <strong><code>lxc-net</code></strong> file. I am going to use <strong>10.0.3.190</strong>.</p>
+
+<p>In order to apply changes to our container, we must stop our container and restart the lxc-net service:</p>
+
+<pre><code>$ lxc-stop -n postgres-cont
+$ service lxc-net restart
+</code></pre>
+
+<p>Now when we start our container again it will take the IPv4 address <strong>10.0.3.190</strong> that we defined manuelly:</p>
+
+<pre><code>$ lxc-start -n postgres-cont
+$ lxc-ls --fancy
+</code></pre>
+
+<p>Output:</p>
+
+<pre><code>    NAME          STATE   AUTOSTART GROUPS IPV4       IPV6  
+    postgres-cont RUNNING 0         -      10.0.3.190 -  
+</code></pre>
+
+<p>We fixed our container to <strong><code>10.0.3.190</code></strong> address.
+<p align="center">
+<img src="/img/gif4.gif" alt="gif" />
+</p></p>
+
+<hr />
+
+<p>As a result we have a running LXC container with fixed IPv4 address which contains PostgreSQL in it. My next post will be about accessing to PostgreSQL that is in a LXC container from the outside of the container. We are going to access to PostgreSQL in a container on PyCharm.</p>
+
+              <hr>
+              <div class="related-posts">
+                <h5>Related Posts</h5>
+                
+              </div>
+            </div>
+          </div>
+          <hr>
+        <div class="disqus">
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+
+    (function() {
+      
+      
+      if (window.location.hostname == "localhost")
+        return;
+
+      var disqus_shortname = 'azizkandemir';
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  
+</div>
+
+        </div>
+      </div>
+      
+    </div>
+
+    
+    <footer>
+  <div id="footer">
+    <div class="container">
+      
+      <div id="languages">
+        
+          
+            <h4><i class="fa fa-globe"></i> <a href="https://azizkandemir.github.io/blog/lxc-postgresql/">Turkish</a></h4>
+          
+        
+      </div>
+      <p class="text-muted">&copy; 2018 Aziz Kandemir. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+<div class="footer"></div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://azizkandemir.github.io/js/docs.min.js"></script>
+<script src="https://azizkandemir.github.io/js/main.js"></script>
+
+<script src="https://azizkandemir.github.io/js/ie10-viewport-bug-workaround.js"></script><!-- Syntax highlighting -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+    
+  </body>
+</html>

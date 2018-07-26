@@ -12,22 +12,14 @@
     
     
     <item>
-      <title>Creating a new theme</title>
-      <link>https://azizkandemir.github.io/en/blog/creating-a-new-theme/</link>
+      <title>PostgreSQL in a LXC Container</title>
+      <link>https://azizkandemir.github.io/en/blog/lxc-postgresql/</link>
       <pubDate>Wed, 27 Jun 2018 00:00:00 +0300</pubDate>
       
-      <guid>https://azizkandemir.github.io/en/blog/creating-a-new-theme/</guid>
-      <description>Giris This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.
-We&amp;rsquo;ll start with creating a new site with a very basic template.</description>
-    </item>
-    
-    <item>
-      <title>First blog</title>
-      <link>https://azizkandemir.github.io/en/blog/first-blog/</link>
-      <pubDate>Wed, 27 Jun 2018 00:00:00 +0300</pubDate>
-      
-      <guid>https://azizkandemir.github.io/en/blog/first-blog/</guid>
-      <description>Introduction deneme deneme yazı deneme deneme deneme yazı deneme deneme deneme yazı denemedeneme deneme yazı deneme deneme deneme yazı deneme deneme deneme yazı deneme deneme deneme yazı deneme deneme deneme yazı deneme deneme deneme yazı deneme deneme deneme yazı deneme deneme deneme yazı denemedeneme deneme yazı denemedeneme deneme yazı denemedeneme deneme yazı denemedeneme deneme yazı denemedeneme deneme yazı denemedeneme deneme yazı deneme deneme deneme yazı deneme deneme deneme yazı deneme deneme deneme yazı deneme deneme deneme yazı deneme deneme deneme yazı deneme deneme deneme yazı deneme deneme deneme yazı deneme deneme deneme yazı denemes deneme deneme yazı deneme deneme deneme yazı deneme deneme deneme yazı deneme.</description>
+      <guid>https://azizkandemir.github.io/en/blog/lxc-postgresql/</guid>
+      <description>What is LXC? LXC is one of the container types that unlike the virtual machines which are operating system emulators, provides an abstract operating system while a virtual machine provides an abstract machine.
+I&amp;rsquo;m going to talk about how to install a LXC container, how to configure networking and how to install postgresql into the container that will be created.
+LXC Setup The OS that I have: Distributor ID: Ubuntu Description: Ubuntu 18.</description>
     </item>
     
   </channel>

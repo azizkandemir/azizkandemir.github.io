@@ -12,65 +12,29 @@
     
     
     <item>
-      <title>Blog</title>
-      <link>https://azizkandemir.github.io/en/tags/blog/</link>
+      <title>Container</title>
+      <link>https://azizkandemir.github.io/en/tags/container/</link>
       <pubDate>Wed, 27 Jun 2018 00:00:00 +0300</pubDate>
       
-      <guid>https://azizkandemir.github.io/en/tags/blog/</guid>
+      <guid>https://azizkandemir.github.io/en/tags/container/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Development</title>
-      <link>https://azizkandemir.github.io/en/tags/development/</link>
+      <title>Lxc</title>
+      <link>https://azizkandemir.github.io/en/tags/lxc/</link>
       <pubDate>Wed, 27 Jun 2018 00:00:00 +0300</pubDate>
       
-      <guid>https://azizkandemir.github.io/en/tags/development/</guid>
+      <guid>https://azizkandemir.github.io/en/tags/lxc/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Go</title>
-      <link>https://azizkandemir.github.io/en/tags/go/</link>
+      <title>Postgresql</title>
+      <link>https://azizkandemir.github.io/en/tags/postgresql/</link>
       <pubDate>Wed, 27 Jun 2018 00:00:00 +0300</pubDate>
       
-      <guid>https://azizkandemir.github.io/en/tags/go/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Golang</title>
-      <link>https://azizkandemir.github.io/en/tags/golang/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://azizkandemir.github.io/en/tags/golang/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Hugo</title>
-      <link>https://azizkandemir.github.io/en/tags/hugo/</link>
-      <pubDate>Wed, 27 Jun 2018 00:00:00 +0300</pubDate>
-      
-      <guid>https://azizkandemir.github.io/en/tags/hugo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Jekyll</title>
-      <link>https://azizkandemir.github.io/en/tags/jekyll/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://azizkandemir.github.io/en/tags/jekyll/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Migrate</title>
-      <link>https://azizkandemir.github.io/en/tags/migrate/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://azizkandemir.github.io/en/tags/migrate/</guid>
+      <guid>https://azizkandemir.github.io/en/tags/postgresql/</guid>
       <description></description>
     </item>
     
@@ -80,24 +44,6 @@
       <pubDate>Sun, 02 Oct 2016 22:55:05 -0400</pubDate>
       
       <guid>https://azizkandemir.github.io/en/tags/projects/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Templates</title>
-      <link>https://azizkandemir.github.io/en/tags/templates/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://azizkandemir.github.io/en/tags/templates/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Themes</title>
-      <link>https://azizkandemir.github.io/en/tags/themes/</link>
-      <pubDate>Wed, 27 Jun 2018 00:00:00 +0300</pubDate>
-      
-      <guid>https://azizkandemir.github.io/en/tags/themes/</guid>
       <description></description>
     </item>
     
