@@ -6,18 +6,20 @@
     <description>Recent content in Blogs on Aziz Kandemir</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>tr-TR</language>
-    <lastBuildDate>Wed, 27 Jun 2018 00:00:00 +0300</lastBuildDate>
+    <lastBuildDate>Thu, 26 Jul 2018 00:00:00 +0300</lastBuildDate>
     
 	<atom:link href="https://azizkandemir.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>ilk blog</title>
+      <title>LXC konteynerinde PostgreSQL</title>
       <link>https://azizkandemir.github.io/blog/ilk-blog/</link>
-      <pubDate>Wed, 27 Jun 2018 00:00:00 +0300</pubDate>
+      <pubDate>Thu, 26 Jul 2018 00:00:00 +0300</pubDate>
       
       <guid>https://azizkandemir.github.io/blog/ilk-blog/</guid>
-      <description>Introduction deneme deneme yazı deneme deneme deneme yazı deneme deneme deneme yazı denemedeneme deneme yazı deneme deneme deneme yazı deneme deneme deneme yazı deneme deneme deneme yazı deneme deneme deneme yazı deneme deneme deneme yazı deneme deneme deneme yazı deneme deneme deneme yazı denemedeneme deneme yazı denemedeneme deneme yazı denemedeneme deneme yazı denemedeneme deneme yazı denemedeneme deneme yazı denemedeneme deneme yazı deneme deneme deneme yazı deneme deneme deneme yazı deneme deneme deneme yazı deneme deneme deneme yazı deneme deneme deneme yazı deneme deneme deneme yazı deneme deneme deneme yazı deneme deneme deneme yazı denemes deneme deneme yazı deneme deneme deneme yazı deneme deneme deneme yazı deneme.</description>
+      <description>LXC Nedir? LXC, işletim sistemi emülatörü olan sanal makinelerden farklı olarak tamamen soyut bir makine yerine soyut bir işletim sistemi seviyesinde sanallaştırma sağlayan konteyner çeşitlerinden biridir.
+Bu yazımda bir LXC konteyneri nasıl kurulur, ağ yapılandırması nasıl yapılır ve kurulacak olan bu konteynerde postgresql nasıl kurulur, bunlardan bahsedeceğim.
+LXC Kurulumu Sahip olduğum işletim sistemi: Distributor ID: Ubuntu Description: Ubuntu 18.04 LTS Release: 18.04 Codename: bionic  Öncelikle yapacağımız hemen hemen her işlem root izni isteyeceği için kendimizi root seviyesine çıkaralım:</description>
     </item>
     
     <item>

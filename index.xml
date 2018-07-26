@@ -6,10 +6,21 @@
     <description>Recent content on Aziz Kandemir</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>tr-TR</language>
-    <lastBuildDate>Wed, 27 Jun 2018 00:00:00 +0300</lastBuildDate>
+    <lastBuildDate>Thu, 26 Jul 2018 00:00:00 +0300</lastBuildDate>
     
 	<atom:link href="https://azizkandemir.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>LXC konteynerinde PostgreSQL</title>
+      <link>https://azizkandemir.github.io/blog/ilk-blog/</link>
+      <pubDate>Thu, 26 Jul 2018 00:00:00 +0300</pubDate>
+      
+      <guid>https://azizkandemir.github.io/blog/ilk-blog/</guid>
+      <description>LXC Nedir? LXC, işletim sistemi emülatörü olan sanal makinelerden farklı olarak tamamen soyut bir makine yerine soyut bir işletim sistemi seviyesinde sanallaştırma sağlayan konteyner çeşitlerinden biridir.
+Bu yazımda bir LXC konteyneri nasıl kurulur, ağ yapılandırması nasıl yapılır ve kurulacak olan bu konteynerde postgresql nasıl kurulur, bunlardan bahsedeceğim.
+LXC Kurulumu Sahip olduğum işletim sistemi: Distributor ID: Ubuntu Description: Ubuntu 18.04 LTS Release: 18.04 Codename: bionic  Öncelikle yapacağımız hemen hemen her işlem root izni isteyeceği için kendimizi root seviyesine çıkaralım:</description>
+    </item>
     
     <item>
       <title>Ben Kimim?</title>
@@ -20,15 +31,6 @@
       <description>Merhaba!
 Ben Aziz Kandemir. 23 yıl önce dünyanın en güzel şehirlerinden birinde doğdum, İstanbul&amp;rsquo;da. Şu anda Muğla Sıtkı Koçman Üniversitesi bilgisayar mühendisliği bölümü 4. sınıf öğrencisi olan tecrübesiz bir mühendis adayıyım.
 Upuzun bir yolun henüz çok başındayım. Bu yolda öğrendiğim ve benim gibi yolda olanlara yardımcı olabilecek faydalı bilgileri elimden geldiğince doğru bir şekilde aktarmaya çalışacağım.</description>
-    </item>
-    
-    <item>
-      <title>ilk blog</title>
-      <link>https://azizkandemir.github.io/blog/ilk-blog/</link>
-      <pubDate>Wed, 27 Jun 2018 00:00:00 +0300</pubDate>
-      
-      <guid>https://azizkandemir.github.io/blog/ilk-blog/</guid>
-      <description>Introduction deneme deneme yazı deneme deneme deneme yazı deneme deneme deneme yazı denemedeneme deneme yazı deneme deneme deneme yazı deneme deneme deneme yazı deneme deneme deneme yazı deneme deneme deneme yazı deneme deneme deneme yazı deneme deneme deneme yazı deneme deneme deneme yazı denemedeneme deneme yazı denemedeneme deneme yazı denemedeneme deneme yazı denemedeneme deneme yazı denemedeneme deneme yazı denemedeneme deneme yazı deneme deneme deneme yazı deneme deneme deneme yazı deneme deneme deneme yazı deneme deneme deneme yazı deneme deneme deneme yazı deneme deneme deneme yazı deneme deneme deneme yazı deneme deneme deneme yazı denemes deneme deneme yazı deneme deneme deneme yazı deneme deneme deneme yazı deneme.</description>
     </item>
     
     <item>
