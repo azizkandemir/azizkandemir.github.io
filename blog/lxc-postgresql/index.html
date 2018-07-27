@@ -92,19 +92,14 @@ Release:    18.04
 Codename:   bionic
 </code></pre>
 
-<p>Öncelikle yapacağımız hemen hemen her işlem <strong>root</strong> izni isteyeceği için kendimizi <strong>root</strong> seviyesine çıkaralım:</p>
-
-<pre><code>$ sudo su
-</code></pre>
-
 <p>Sistemimize <strong>LXC</strong> kurmak için:</p>
 
-<pre><code>$ apt install lxc1
+<pre><code>$ sudo apt install lxc1
 </code></pre>
 
-<p>komutunu çalıştıralım. Konteynerimizi yaratmak için hazırız. Bu yazımda <strong>postgres-cont</strong> isimli bir konteyner oluşturacağım ancak siz konteynerinize <strong>-n</strong> parametresiyle istediğiniz ismi verebilirsiniz. Root seviyesinde olduğumuz terminalimizde:</p>
+<p>komutunu çalıştıralım. Konteynerimizi yaratmak için hazırız. Bu yazımda <strong>postgres-cont</strong> isimli bir konteyner oluşturacağım ancak siz konteynerinize <strong>-n</strong> parametresiyle istediğiniz ismi verebilirsiniz. Root seviyesi izni ile:</p>
 
-<pre><code>$ lxc-create -n postgres-cont -t download
+<pre><code>$ sudo lxc-create -n postgres-cont -t download
 </code></pre>
 
 <p>komutunu çalıştırıyoruz. Bu komut bizi konteynerimize kurabileceğimiz işletim sistemlerini detaylarıyla birlikte seçebileceğimiz bir ekrana götürecektir:
@@ -116,7 +111,7 @@ Codename:   bionic
 
 <p>Sıradaki komut varolan konteynerleri gösterir:</p>
 
-<pre><code>$ lxc-ls --fancy 
+<pre><code>$ sudo lxc-ls --fancy 
 </code></pre>
 
 <p>Çıktı:</p>
@@ -127,12 +122,12 @@ Codename:   bionic
 
 <p>Ancak konteynerimiz çalışır durumda değil (STOPPED). Şimdi oluşturduğumuz konteyneri çalıştırma zamanı. Şunu yazın ve çalıştırın:</p>
 
-<pre><code>$ lxc-start -n postgres-cont
+<pre><code>$ sudo lxc-start -n postgres-cont
 </code></pre>
 
 <p>Tekrar konteynerlerimizi listelediğimizde:</p>
 
-<pre><code>$ lxc-ls --fancy
+<pre><code>$ sudo lxc-ls --fancy
 </code></pre>
 
 <p>Çıktı olarak artık:</p>
@@ -143,22 +138,22 @@ Codename:   bionic
 
 <p>Konteynerimizin çalışır durumda olduğunu görebiliyoruz (RUNNING). Artık konteynerimize erişebiliriz. Bunun için şu komutu çalıştırıyoruz:</p>
 
-<pre><code>$ lxc-attach -n postgres-cont
+<pre><code>$ sudo lxc-attach -n postgres-cont
 </code></pre>
 
 <p>Konteynerimize kurmamız gereken şeylerin başında <strong><code>net-tools</code></strong> geliyor:</p>
 
-<pre><code>$ apt-get install net-tools
+<pre><code>$ sudo apt-get install net-tools
 </code></pre>
 
 <p>Varsayılan olarak <strong>Vi</strong> editör geliyor ancak ben <strong>Nano</strong> kullanmayı tercih ettiğim için nano kuracağım:</p>
 
-<pre><code>$ apt-get install nano
+<pre><code>$ sudo apt-get install nano
 </code></pre>
 
 <p>Ve tabiki postgreSQL:</p>
 
-<pre><code>$ apt-get install postgresql
+<pre><code>$ sudo apt-get install postgresql
 </code></pre>
 
 <p>Artık postgresql konteynerimizde kullanılmaya hazır. Şu komut ile:</p>
@@ -207,7 +202,7 @@ Codename:   bionic
 
 <p>Varsayılan olarak comment edilmiş bu satırı uncomment ediyoruz ve <code>/etc/lxc</code> dizininde <strong>dnsmasq.conf</strong> isimli bir dosya oluşturuyoruz:</p>
 
-<pre><code>$ touch /etc/lxc/dnsmasq.conf
+<pre><code>$ sudo touch /etc/lxc/dnsmasq.conf
 </code></pre>
 
 <p>Oluşturduğumuz dosyaya şu satırı ekliyoruz, kaydedip çıkıyoruz:</p>
@@ -219,14 +214,14 @@ Codename:   bionic
 
 <p>Yapılan değişikliklerin uygulanması için konteynerimizi durdurup lxc-net servisini yeniden başlatmamız gerekiyor:</p>
 
-<pre><code>$ lxc-stop -n postgres-cont
-$ service lxc-net restart
+<pre><code>$ sudo lxc-stop -n postgres-cont
+$ sudo service lxc-net restart
 </code></pre>
 
 <p>Şimdi konteynerimizi tekrar çalışır duruma getirdiğimizde manuel olarak tanımlanan <strong>10.0.3.190</strong> IPv4 adresini alacaktır.</p>
 
-<pre><code>$ lxc-start -n postgres-cont
-$ lxc-ls --fancy
+<pre><code>$ sudo lxc-start -n postgres-cont
+$ sudo lxc-ls --fancy
 </code></pre>
 
 <p>Çıktı:</p>

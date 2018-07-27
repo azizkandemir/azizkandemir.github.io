@@ -19,7 +19,7 @@
       <guid>https://azizkandemir.github.io/blog/lxc-postgresql/</guid>
       <description>LXC Nedir? LXC, işletim sistemi emülatörü olan sanal makinelerden farklı olarak tamamen soyut bir makine yerine soyut bir işletim sistemi seviyesinde sanallaştırma sağlayan konteyner çeşitlerinden biridir.
 Bu yazımda bir LXC konteyneri nasıl kurulur, ağ yapılandırması nasıl yapılır ve kurulacak olan bu konteynerde postgresql nasıl kurulur, bunlardan bahsedeceğim.
-LXC Kurulumu Sahip olduğum işletim sistemi: Distributor ID: Ubuntu Description: Ubuntu 18.04 LTS Release: 18.04 Codename: bionic  Öncelikle yapacağımız hemen hemen her işlem root izni isteyeceği için kendimizi root seviyesine çıkaralım:</description>
+LXC Kurulumu Sahip olduğum işletim sistemi: Distributor ID: Ubuntu Description: Ubuntu 18.04 LTS Release: 18.04 Codename: bionic  Sistemimize LXC kurmak için:</description>
     </item>
     
   </channel>
